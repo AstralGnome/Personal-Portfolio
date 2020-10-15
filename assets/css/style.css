@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --jeans: #445877;
+    --sky: #92ccce;
+    --lessDark: #31343d;
+    --veryDark: #1c1d21;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: var(--veryDark);
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--sky);
+    background-color: var(--lessDark);
+}
+
+header h1 {
+    padding-left: .75em;
+    font-size: 2em;
+    align-items: center;
+    display: inline-block;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    flex-wrap: wrap;
+    display: inline-block;
+    font-size: 1.5em;
+    color: var(--sky);
+    padding: 1em;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+aside {
+    position: fixed;
+    width: 150px;
+    background-color: rgb(173, 216, 86);
+    padding-bottom: 100%;
+}
+
+aside h1 {
+color: var(--lessDark);
+text-align: right;
+}
+
+.about-me, .work, .contact-me {
+    border-right: solid var(--lessDark);
+    padding-right: 10px;
+    font-size: 22px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about-me{
+
+}
+
+.work {
+
+}
+
+.contact-me {
+
+}
+
+.hero {
+    padding-left: 150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.hero img {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-header {
+    text-align: center;
+    background-color: turquoise;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;}
+    header h1 {
+        padding-left: 0;
+        padding-top: .5em;
+    }
+    nav a {
+        padding-top: .6em;
+    }    
+    aside {
+        display: none;
+    }
+    .hero {
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+    }
+}
+
