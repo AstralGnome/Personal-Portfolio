@@ -32,7 +32,7 @@ header h1 {
     display: inline-block;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
 }
@@ -52,10 +52,14 @@ main {
     flex-direction: row;
 }
 
+.banner img {
+    width: 100%;
+}
+    
 aside {
-    position: fixed;
+    position: relative;
     width: 150px;
-    background-color: rgb(173, 216, 86);
+    background-color: whitesmoke;
     padding-bottom: 100%;
 }
 
@@ -64,12 +68,24 @@ color: var(--lessDark);
 text-align: right;
 }
 
-.about-me, .work, .contact-me {
+.sidebar-one, .sidebar-two, .sidebar-three {
     border-right: solid var(--lessDark);
     padding-right: 10px;
     font-size: 22px;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.sidebar-one {
+
+}
+
+.sidebar-two {
+
+}
+
+.sidebar-three {
+
 }
 
 .about-me{
@@ -84,29 +100,24 @@ text-align: right;
 
 }
 
-.hero {
-    padding-left: 150px;
-    width: 100%;
-    height: 100%;
-    display: flex;
+.card {
+    justify-content: left;
+    width: 75%;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.hero img {
-    width: 100%;
+.about-me {
+    text-align: left;
+    padding: 25px;
+    background-color: whitesmoke;
+    color: var(--lessDark);
+    font-size: 22px;
 }
 
-section {
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+.work img {
+justify-content: space-between;
 
-.card-header {
-    text-align: center;
-    background-color: turquoise;
-    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
