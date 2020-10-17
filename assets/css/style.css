@@ -7,6 +7,11 @@
     --sky: #92ccce;
     --lessDark: #31343d;
     --veryDark: #1c1d21;
+    --flex-row: row;
+    --flex-column: column;
+    --flex-wrap: wrap;
+    --center: center;
+
 }
 
 body {
@@ -14,6 +19,7 @@ body {
     font-size: 14px;
     color: var(--veryDark);
     background-color: whitesmoke;
+    margin-bottom: 20px;
 }
 
 header {
@@ -40,10 +46,30 @@ nav ul {
 nav a {
     flex-wrap: wrap;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 20px;
     color: var(--sky);
     padding: 1em;
     text-decoration: none;
+}
+
+a:hover {
+    opacity: .9;
+    color: whitesmoke;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner p {
+    position: absolute;
+    background-color: whitesmoke;
+    border: solid 2px var(--jeans);
+    padding: 8px;
+    right: 1.5%;
+    bottom: 15%;
+    font-size: 18px;
+    opacity: .8;
 }
 
 main {
@@ -55,59 +81,30 @@ main {
 .banner img {
     width: 100%;
 }
-    
-aside {
-    position: relative;
-    width: 150px;
-    background-color: whitesmoke;
-    padding-bottom: 100%;
-}
 
-aside h1 {
-color: var(--lessDark);
-text-align: right;
+main h1 {
+    background-color: whitesmoke;
+    color: var(--lessDark);
+    text-align: left;
+    padding-right: 10px;
+    border-right: solid 2px var(--lessDark);
 }
 
 .sidebar-one, .sidebar-two, .sidebar-three {
     border-right: solid var(--lessDark);
-    padding-right: 10px;
     font-size: 22px;
     padding-top: 25px;
-    padding-bottom: 25px;
 }
 
-.sidebar-one {
-
+.sidebar-one h1 {
+    padding-bottom: 200px;
 }
-
-.sidebar-two {
-
-}
-
-.sidebar-three {
-
+.sidebar-one .about-me {
+    overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .about-me{
-
-}
-
-.work {
-
-}
-
-.contact-me {
-
-}
-
-.card {
-    justify-content: left;
-    width: 75%;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.about-me {
     text-align: left;
     padding: 25px;
     background-color: whitesmoke;
@@ -115,9 +112,50 @@ text-align: right;
     font-size: 22px;
 }
 
-.work img {
-justify-content: space-between;
+.sidebar-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
+
+.sidebar-two h1 {
+    padding-bottom: 300px;
+    padding-bottom: 500px;
+    margin-bottom: 25px;
+}
+
+.work {
+    background-color: whitesmoke;
+}
+
+.work img {
+    width: 100%;
+
+}
+
+.cube-one {
+    /* float: left; */
+}
+
+.cube-two {
+    /* float: left; */
+}
+
+.cube-three {
+    /* float: left; */
+}
+
+}
+.cube-one img, .cube-two img, .cube-three img {
+  width: 33%;
+}
+.sidebar-three {
+    padding-bottom: 75px;
+}
+
+.contact-me {
+    float: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -129,14 +167,16 @@ justify-content: space-between;
     }
     nav a {
         padding-top: .6em;
-    }    
-    aside {
+    }
+    .sidebar-one {
+        flex-direction: column;
+    }
+    
+    .banner p {
         display: none;
     }
-    .hero {
-        width: 100%;
-        height: 100%;
-        padding-left: 0px;
+
     }
-}
+
+
 
