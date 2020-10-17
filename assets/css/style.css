@@ -1,3 +1,5 @@
+/* My main takeaway from this lesson is definitely the importance of staying organized and deliberate with my CSS. It sure can get mucky fast, especially if you change your strategy mid stream. */
+
 *{
     box-sizing: border-box;
 }
@@ -73,7 +75,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-
 }
 
 .banner img {
@@ -125,21 +126,6 @@ main h1 {
     width: 75%;
 }
 
-.cubes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 20%;
-    width: 120%;
-    
-}
-
-.cubes img {
-    
-    justify-content: center;
-}
-
-
 .sidebar-three {
     width: 100%;
     padding-left: 3px;
@@ -170,6 +156,8 @@ main h1 {
     font-weight: bold;
 }
 
+
+/* I'm finally getting the hang of these media queries! */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;}
@@ -211,11 +199,6 @@ main h1 {
         width: 100%;
         padding-bottom: none;
     }
-
-    .cubes {
-        padding-left: none;
-    }
-
     }
 
 
