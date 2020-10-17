@@ -9,7 +9,11 @@ I have developed a personal portfolio page meant to highlight my skills as a web
 When you click on the links they will anchor to their corresponding locations on the webpage. Also, when you decrease the size of the window all of the elements should be obvserved to respond dynamically and smoothly.
 
 ![Port Site](assets/images/screengrab.jpg)
-![Port Site Responsive] (assets/images/screengrab responsive.jpg)url
+![Port Site Responsive] ()url
+
+![Port Site Resp](assets/images/screengrab responsive.jpg)
+Format: ![Alt Text](url)
+
 
 ##Credits
 
