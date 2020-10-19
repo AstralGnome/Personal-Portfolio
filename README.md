@@ -2,11 +2,11 @@
 
 ##Description
 
-I have developed a personal portfolio page meant to highlight my skills as a web developer. It is a responsive page that uses links, images, and text to highlight my growing abilities.
+I have developed a responsive personal portfolio page that uses links, images, and text to showcase my growing web development abilities.
 
 ##Usage
 
-When you click on the links they will anchor to their corresponding locations on the webpage. Also, when you decrease the size of the window all of the elements should be obvserved to respond dynamically and smoothly.
+When you click on the links in the nav-bar they will anchor to their corresponding locations on the webpage. Also, when you decrease the size of the window all of the elements should be obvserved to respond dynamically and smoothly while maintaining a consistent aesthetic.
 
 ![Port Site](https://github.com/AstralGnome/Personal-Portfolio/blob/main/assets/images/ScreenshotHybrid.jpg?raw=true)
 
