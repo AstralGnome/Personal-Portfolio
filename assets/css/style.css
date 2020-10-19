@@ -42,12 +42,12 @@ nav a {
     text-decoration: none;
 }
 
-a:hover {
+.banner a:hover {
     opacity: .8;
     color: whitesmoke;
 }
 
-.hero:hover {
+.hero:hover, #first:hover, #second:hover, #third:hover {
     opacity: .8;
 }
 
@@ -123,21 +123,25 @@ main h1 {
     position: relative;
 }
 
-.hero img {
-    margin-left: 20%;
-    display: flex;
+.hero {
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 78%;
-    border-left: solid 2px var(--lessDark);
+    flex-wrap: wrap; */
+    width: 77%;
+    /* border-left: solid 2px var(--lessDark); */
 }
+
+.hero img {
+    width: 100%;
+}
+
 
 .hero p {
     position: absolute;
     background-color: whitesmoke;
     border: solid 2px var(--jeans);
     padding: 8px;
-    left: 21%;
+    left: 20.8%;
     top: 35%;
     font-size: 18px;
     opacity: .9;
@@ -147,14 +151,17 @@ main h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 20%;
+    /* margin-left: 20%; */
     width: 98%;
     position: relative;
-    border-left: solid 2px var(--lessDark);
 } 
 
+.cubes h1 {
+    width: 20.4%;
+}
+
 #first, #second, #third {
-    width: 33%;
+    width: 26%;
     height: 20%;
 }
 
@@ -170,7 +177,7 @@ main h1 {
     background-color: whitesmoke;
     border: solid 2px var(--jeans);
     padding: 8px;
-    left: 1%;
+    left: 21.2%;
     top: 70%;
     font-size: 18px;
     opacity: .9;
@@ -181,7 +188,7 @@ main h1 {
     background-color: whitesmoke;
     border: solid 2px var(--jeans);
     padding: 8px;
-    left: 34%;
+    left: 47%;
     top: 70%;
     font-size: 18px;
     opacity: .9;
@@ -193,22 +200,10 @@ main h1 {
     background-color: whitesmoke;
     border: solid 2px var(--jeans);
     padding: 8px;
-    left: 66.5%;
+    left: 72.8%;
     top: 70%;
     font-size: 18px;
     opacity: .9;
-}
-
-#first img{
-
-}
-
-#second img{
-
-}
-
-#third img{
-
 }
 
 .sidebar-three {
@@ -282,6 +277,15 @@ main h1 {
         margin-left: 0%;
     }
 
+    .cubes h1 {
+        display: none;
+    }
+
+    #first, #second, #third {
+        width: 33%;
+        height: 20%;
+    }
+
     .sidebar-three {
         border-right: none;
         width: 100%;
@@ -296,8 +300,12 @@ main h1 {
         padding-bottom: none;
     }
 
+    .hero {
+        width: 97.5%;
+    }
+
     .hero p {
-        left: 35%;
+        left: 32.5%;
         top: 40%;
     }
 
