@@ -232,7 +232,8 @@ main h1 {
 }
 
 
-/* I'm finally getting the hang of these media queries! */
+/* I'm finally getting the hang of these media queries! Next, I would like to learn
+how to keep everything from growing--just freeze everything in place--upon reaching a certain width. */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;}
